@@ -1,0 +1,9 @@
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        s1=Counter(s)
+        t1=Counter(t)
+        if len(s) != len(t):
+            return False
+        else:
+            return s1==t1
+            
